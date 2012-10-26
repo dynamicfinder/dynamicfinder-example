@@ -164,7 +164,7 @@
         <repository>
             <id>dynamicfinder-repository</id>
             <name>Dynamic Finder Maven Repository</name>
-            <url>https://github.com/dynamicfinder/maven-repository</url>
+            <url>https://github.com/dynamicfinder/maven-repository/raw/master/snapshots</url>
         </repository>
     </repositories>
 </project>
