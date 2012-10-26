@@ -29,7 +29,6 @@
             <a class="brand" href="${_root}/home">Finder4J Servlet Example</a>
             <ul class="nav">
                 <li><a href="${_root}/employee/list">Employee</a></li>
-                <li><a href="#">Link</a></li>
             </ul>
         </div>
     </div>
