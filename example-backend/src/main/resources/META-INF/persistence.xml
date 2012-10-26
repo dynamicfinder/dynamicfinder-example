@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence persistence_2_0.xsd"
+    version="2.0">
+
+    <persistence-unit name="dynamicfinder-PU" transaction-type="JTA">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <jta-data-source>java:/comp/env/jdbc/dynamicfinder</jta-data-source>
+
+        <properties>
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="false" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+            <property name="hibernate.connection.autocommit" value="false" />
+            <property name="transaction.factory_class" value="org.hibernate.transaction.JTATransactionFactory" />
+            <property name="hibernate.transaction.manager_lookup_class" value="org.hibernate.transaction.BTMTransactionManagerLookup" />
+            <property name="hibernate.jndi.class" value="bitronix.tm.jndi.BitronixInitialContextFactory" />
+        </properties>
+    </persistence-unit>
+</persistence>
