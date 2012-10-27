@@ -40,7 +40,7 @@ public abstract class AbstractDAO<E> {
 
 		// What we really need is query string based on restriction defined in 
 		// controller.
-		final String queryString = queryBuilder.getQueryString() + " order by :orderField desc";
+		final String queryString = queryBuilder.getQueryString();
 		final String countQueryString = queryBuilder.getCountQueryString();
 
 		// Use parsed queryString as plain JPQL to EntityManager#createQuery() method.
@@ -55,7 +55,6 @@ public abstract class AbstractDAO<E> {
 			query.setParameter(parameter, actualRestriction.get(parameter).getValue());
 			countQuery.setParameter(parameter, actualRestriction.get(parameter).getValue());
 		}
-		query.setParameter("orderField", "lastName");
 
 		final int firstResult = (page - 1) * DEFAULT_RESULT_SIZE;
 		final int maxResult = DEFAULT_RESULT_SIZE;
