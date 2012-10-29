@@ -3,15 +3,10 @@
 <Context crossContext="true">
     <WatchedResource>WEB-INF/web.xml</WatchedResource>
     <Transaction factory="bitronix.tm.BitronixUserTransactionObjectFactory" />
-    <Resource name="jdbc/dynamicfinder" 
+    <Resource name="jdbc/dynamicfinder" uniqueName="jdbc/dynamicfinder"
+        factory="bitronix.tm.resource.ResourceObjectFactory"
         auth="Container" 
         type="javax.sql.DataSource" 
-        description="DB Connection" 
-        driverClassName="com.mysql.jdbc.Driver" 
-        url="jdbc:mysql://localhost:3306/dynamicfinder_dev"  
-        username="root" 
-        password="admin" 
-        maxActive="20" 
-        maxIdle="10"
+        description="DB Connection"
         />
 </Context>
