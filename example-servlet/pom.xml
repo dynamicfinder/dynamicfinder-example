@@ -27,7 +27,7 @@
             <artifactId>hibernate-jpa-2.0-api</artifactId>
         </dependency>
 
-        <!-- Needed because not included with finder4j-example-backend. -->
+        <!-- Needed because not included with dynamicfinder-example-backend. -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -56,6 +56,11 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
         </dependency>
     </dependencies>
 

@@ -152,6 +152,13 @@
                 <optional>true</optional>
             </dependency>
 
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.10</version>
+                <scope>test</scope>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -164,7 +171,7 @@
         <repository>
             <id>dynamicfinder-repository</id>
             <name>Dynamic Finder Maven Repository</name>
-            <url>https://github.com/dynamicfinder/maven-repository/raw/master/snapshots</url>
+            <url>http://repository-dynamicfinder.forge.cloudbees.com/snapshot</url>
         </repository>
     </repositories>
 </project>
