@@ -2,9 +2,9 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
 <t:template>
-<jsp:attribute name="pageTitle">Finder4J Servlet Example</jsp:attribute>
+<jsp:attribute name="pageTitle">Dynamic Finder Servlet Example</jsp:attribute>
 
 <jsp:attribute name="pageContent">
-    <p>This is simple example about how to use Finder4J with Servlet.</p>
+    <p>This is simple example about how to use Dynamic Finder with Servlet.</p>
 </jsp:attribute>
 </t:template>
