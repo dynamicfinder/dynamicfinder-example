@@ -48,7 +48,7 @@ public abstract class AbstractDAO<E> {
 		final TypedQuery<Long> countQuery = this.entityManager.createQuery(countQueryString, Long.class);
 
 		// Now, JPA need to know about which parameter should be added to their 
-		// Query object. Luckily, Finder4J provide a way for this easily:
+		// Query object. Luckily, dynamicfinder provide a way for this easily:
 		final Map<Integer, Restriction> actualRestriction = queryBuilder.getActualRestrictions();
 
 		for (final Integer parameter : actualRestriction.keySet()) {
@@ -68,6 +68,6 @@ public abstract class AbstractDAO<E> {
 		this.transaction.commit();
 		this.entityManager.clear();
 
-		return new FindResultDTO<E>(result, count, DEFAULT_RESULT_SIZE);
+		return new FindResultDTO<E>(result, count, DEFAULT_RESULT_SIZE, queryString, countQueryString);
 	}
 }
