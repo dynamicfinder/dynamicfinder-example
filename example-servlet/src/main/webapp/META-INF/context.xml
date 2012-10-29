@@ -8,7 +8,7 @@
         type="javax.sql.DataSource" 
         description="DB Connection" 
         driverClassName="com.mysql.jdbc.Driver" 
-        url="jdbc:mysql://localhost:3306/finder4j_dev"  
+        url="jdbc:mysql://localhost:3306/dynamicfinder_dev"  
         username="root" 
         password="admin" 
         maxActive="20" 
