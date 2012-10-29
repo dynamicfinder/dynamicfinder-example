@@ -14,8 +14,7 @@
             <property name="hibernate.hbm2ddl.auto" value="update" />
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
             <property name="hibernate.connection.autocommit" value="false" />
-            <property name="transaction.factory_class" value="org.hibernate.transaction.JTATransactionFactory" />
-            <property name="hibernate.transaction.manager_lookup_class" value="org.hibernate.transaction.BTMTransactionManagerLookup" />
+            <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.BitronixJtaPlatform" />
             <property name="hibernate.jndi.class" value="bitronix.tm.jndi.BitronixInitialContextFactory" />
         </properties>
     </persistence-unit>
