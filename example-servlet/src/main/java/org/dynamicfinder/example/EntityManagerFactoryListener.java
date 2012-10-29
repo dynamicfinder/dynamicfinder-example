@@ -1,4 +1,4 @@
-package org.dynamicfinder.example.servlet;
+package org.dynamicfinder.example;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;

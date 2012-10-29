@@ -1,4 +1,4 @@
-package org.dynamicfinder.example.servlet.controller;
+package org.dynamicfinder.example.controller;
 
 import javax.servlet.annotation.WebServlet;
 
